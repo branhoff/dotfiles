@@ -1,14 +1,15 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+## If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your Oh My Zsh installation.
+# Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
-# load a random theme each time Oh My Zsh is loaded, in which case,
+# load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="spaceship"
+SPACESHIP_PROMPT_ASYNC=false
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -85,20 +86,87 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='nvim'
+#   export EDITOR='mvim'
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch $(uname -m)"
+# export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by Oh My Zsh libs,
-# plugins, and themes. Aliases can be placed here, though Oh My Zsh
-# users are encouraged to define aliases within a top-level file in
-# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
-# - $ZSH_CUSTOM/aliases.zsh
-# - $ZSH_CUSTOM/macos.zsh
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
+#  --- ALIASES ---
+## ZSH
+alias configzsh="codium ~/.zshrc"
+alias refreshzsh="source ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+## SCREEN LAYOUTS
+alias sethomelayout="~/.screenlayout/home_layout.sh"
+alias setworklayout="~/.screenlayout/work_layout.sh"
+alias setstandardlayout="~/.screenlayout/standard_layout.sh"
+
+## IDEs
+### JetBrains startup scripts have startup scripts saved in ~/.local/bin
+
+alias intellij="intellij &>/dev/null &"
+alias pycharm="pycharm &>/dev/null &"
+alias clion="clion &>/dev/null &"
+alias rider="rider &>/dev/null &"
+
+## APPLICATIONS
+alias unityhub="unityhub &>/dev/null &"
+
+
+## SCRIPTS
+alias deletebranches="~/scripts/delete_branches.sh"
+
+## TOOLS
+alias k="kubectl"
+
+# OMSCS ML4T
+VENV=~/anaconda3/envs/ml4t
+alias grade="PYTHONPATH=../:. $VENV"
+
+
+export PATH="$HOME/.local/bin:$PATH"
+
+# Add SSH keys
+# Start SSH agent if not already running
+eval `ssh-agent -s`
+
+ssh-add ~/.ssh/id_ed25519_github
+
+#  --- VERSION MANAGEMENT CONFIGURATION ---
+
+# pyenv - python version manager
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# nvm - Node.js version manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# sdk - Java version manager
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/hofbr/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/hofbr/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/hofbr/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/hofbr/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
