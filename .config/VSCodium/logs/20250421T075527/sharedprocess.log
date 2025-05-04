@@ -1,0 +1,5 @@
+2025-04-21 07:59:31.032 [info] Getting Manifest... shd101wyy.markdown-preview-enhanced
+2025-04-21 07:59:33.089 [info] Installing extension: shd101wyy.markdown-preview-enhanced {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/hofbr/.vscode-oss/extensions/extensions.json","path":"/home/hofbr/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"productVersion":{"version":"1.99.32562","date":"2025-04-16T18:21:15.779Z"}}
+2025-04-21 07:59:49.295 [info] Extracted extension to file:///home/hofbr/.vscode-oss/extensions/shd101wyy.markdown-preview-enhanced-0.8.18-universal: shd101wyy.markdown-preview-enhanced
+2025-04-21 07:59:49.317 [info] Renamed to /home/hofbr/.vscode-oss/extensions/shd101wyy.markdown-preview-enhanced-0.8.18-universal
+2025-04-21 07:59:49.335 [info] Extension installed successfully: shd101wyy.markdown-preview-enhanced vscode-userdata:/home/hofbr/.vscode-oss/extensions/extensions.json

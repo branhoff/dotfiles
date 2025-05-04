@@ -1,0 +1,26 @@
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USER_ID: ${UID:-1000}
+        GROUP_ID: ${GID:-1000}
+    container_name: gitgrub-dev
+    volumes:
+      - .:/app:cached
+      - node_modules:/app/node_modules
+      - ~/.gitconfig:/home/nodeuser/.gitconfig:ro
+      - ~/.ssh:/home/nodeuser/.ssh:ro
+    ports:
+      - "5173:5173"  # Vite dev server
+      - "3001:3001"  # Backend API
+    environment:
+      - NODE_ENV=development
+      - HOST=0.0.0.0
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+
+volumes:
+  node_modules:

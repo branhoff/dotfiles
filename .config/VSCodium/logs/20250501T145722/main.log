@@ -1,0 +1,47 @@
+2025-05-01 14:57:22.300 [info] update#setState disabled
+2025-05-01 14:57:22.300 [info] update#ctor - updates are disabled as there is no update URL
+2025-05-01 14:57:40.371 [error] CodeWindow: detected unresponsive
+2025-05-01 14:57:44.944 [error] CodeWindow: recovered from unresponsive
+2025-05-01 14:58:18.945 [error] [uncaught exception in main]: UnresponsiveSampleError: UnresponsiveSampleError: from window with ID 1 belonging to process with pid 7402
+2025-05-01 14:58:18.946 [error] 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:30:79560
+2025-05-01 14:58:18.947 [error] [uncaught exception in main]: UnresponsiveSampleError: UnresponsiveSampleError: from window with ID 1 belonging to process with pid 7402
+2025-05-01 14:58:18.947 [error] 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:1272:77931
+2025-05-01 14:58:18.947 [error] [uncaught exception in main]: UnresponsiveSampleError: UnresponsiveSampleError: from window with ID 1 belonging to process with pid 7402
+2025-05-01 14:58:18.948 [error] 
+    at i.onmessage (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:1271:18366)
+2025-05-01 14:58:18.948 [error] [uncaught exception in main]: UnresponsiveSampleError: UnresponsiveSampleError: from window with ID 1 belonging to process with pid 7402
+2025-05-01 14:58:18.948 [error] 
+    at l.onmessage (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:3256:15529)
+2025-05-01 14:58:18.948 [error] [uncaught exception in main]: UnresponsiveSampleError: UnresponsiveSampleError: from window with ID 1 belonging to process with pid 7402
+2025-05-01 14:58:18.948 [error] 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:66:129187
+2025-05-01 14:58:18.948 [error] [uncaught exception in main]: UnresponsiveSampleError: UnresponsiveSampleError: from window with ID 1 belonging to process with pid 7402
+2025-05-01 14:58:18.948 [error] 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:70:14632
+2025-05-01 14:58:18.948 [error] [uncaught exception in main]: UnresponsiveSampleError: UnresponsiveSampleError: from window with ID 1 belonging to process with pid 7402
+2025-05-01 14:58:18.948 [error] 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:2606:21405
+2025-05-01 14:58:18.948 [error] [uncaught exception in main]: UnresponsiveSampleError: UnresponsiveSampleError: from window with ID 1 belonging to process with pid 7402
+2025-05-01 14:58:18.948 [error] 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:32:25967
+2025-05-01 14:58:18.948 [error] CodeWindow unresponsive samples:
+<18> 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:30:79560
+<1> 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:1272:77931
+<1> 
+    at i.onmessage (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:1271:18366)
+<1> 
+    at l.onmessage (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:3256:15529)
+<1> 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:66:129187
+<1> 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:70:14632
+<1> 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:2606:21405
+<1> 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:32:25967
+Total Samples: 25
+For full overview of the unresponsive period, capture cpu profile via https://aka.ms/vscode-tracing-cpu-profile

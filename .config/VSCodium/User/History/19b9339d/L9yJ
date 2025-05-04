@@ -1,0 +1,15 @@
+FROM node:23-bullseye-slim
+
+WORKDIR /app
+
+RUN groupadd -r nodeuser && useradd -r -g nodeuser -m nodeuser
+
+RUN npm install -g npm@latest
+
+RUN chown -R nodeuser:nodeuser /app
+
+EXPOSE 5173 3001
+
+USER nodeuser
+
+CMD ["sh"]

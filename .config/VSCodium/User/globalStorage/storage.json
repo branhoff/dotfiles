@@ -1,0 +1,79 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "36a2138c596f2dbd0e5a9fa23df0f3710e8fe72219f4705d9f5517a8a7139c60",
+    "telemetry.devDeviceId": "d6521729-300e-4b93-9e50-af38119e9065",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/hofbr/GitProjects/sdl-tutorial"
+            },
+            {
+                "folderUri": "file:///home/hofbr/GitProjects/scripts"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/hofbr/dotfiles": "__default__profile__",
+            "file:///home/hofbr/GitProjects/gitgrub": "__default__profile__",
+            "file:///home/hofbr/GitProjects/sdl-tutorial": "__default__profile__",
+            "file:///home/hofbr/GitProjects/scripts": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/hofbr/GitProjects/scripts",
+            "backupPath": "/home/hofbr/.config/VSCodium/Backups/d2aed1b4fd24a449d07112fc3199fe69",
+            "uiState": {
+                "mode": 1,
+                "x": 960,
+                "y": 1102,
+                "width": 1920,
+                "height": 1178
+            }
+        },
+        "openedWindows": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1f1f1f",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1f1f1f",
+            "editorBackground": "#1f1f1f",
+            "titleBarBackground": "#181818",
+            "titleBarBorder": "#2b2b2b",
+            "activityBarBackground": "#181818",
+            "activityBarBorder": "#2b2b2b",
+            "sideBarBackground": "#181818",
+            "sideBarBorder": "#2b2b2b",
+            "statusBarBackground": "#181818",
+            "statusBarBorder": "#2b2b2b",
+            "statusBarNoFolderBackground": "#1f1f1f"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 372,
+            "auxiliarySideBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "auxiliarySideBarWidth": [
+                170,
+                []
+            ]
+        }
+    }
+}

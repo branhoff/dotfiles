@@ -1,0 +1,20 @@
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: local.Dockerfile
+    container_name: gitgrub-dev
+    volumes:
+      - .:/workspace:cached
+    ports:
+      - "5173:5173"  # Vite dev server
+      - "3001:3001"  # Backend API
+    environment:
+      - NODE_ENV=development
+      - HOST=0.0.0.0
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+
+volumes:
+  node_modules:

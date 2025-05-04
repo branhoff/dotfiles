@@ -1,0 +1,29 @@
+2025-04-30 20:57:01.158 [info] [main] Log level: Info
+2025-04-30 20:57:01.158 [info] [main] Validating found git in: "git"
+2025-04-30 20:57:01.158 [info] [main] Using git "2.39.5" from "git"
+2025-04-30 20:57:01.158 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-30 20:57:01.158 [info] > git rev-parse --show-toplevel [3ms]
+2025-04-30 20:57:01.158 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-04-30 20:57:01.158 [info] [Model][openRepository] Opened repository: /home/hofbr/GitProjects/gitgrub
+2025-04-30 20:57:01.173 [info] > git rev-parse --show-toplevel [4ms]
+2025-04-30 20:57:01.173 [info] > git config --get commit.template [11ms]
+2025-04-30 20:57:01.187 [info] > git rev-parse --show-toplevel [9ms]
+2025-04-30 20:57:01.192 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/issue-10-poc-git-based-recipe-versioning refs/remotes/issue-10-poc-git-based-recipe-versioning [6ms]
+2025-04-30 20:57:01.193 [info] > git rev-parse --show-toplevel [1ms]
+2025-04-30 20:57:01.193 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-30 20:57:01.205 [info] > git show --textconv HEAD:backend/server.js [8ms]
+2025-04-30 20:57:01.216 [info] > git ls-tree -l HEAD -- backend/server.js [14ms]
+2025-04-30 20:57:01.217 [info] > git status -z -uall [6ms]
+2025-04-30 20:57:01.219 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-04-30 20:57:01.238 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/issue-10-poc-git-based-recipe-versioning refs/remotes/issue-10-poc-git-based-recipe-versioning [8ms]
+2025-04-30 20:57:01.253 [info] > git ls-tree -l HEAD -- backend/server.js [2ms]
+2025-04-30 20:57:01.253 [info] > git config --get --local branch.issue-10-poc-git-based-recipe-versioning.vscode-merge-base [11ms]
+2025-04-30 20:57:01.258 [info] > git config --get commit.template [21ms]
+2025-04-30 20:57:01.276 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/issue-6-create-entity-relationship-diagram refs/remotes/origin/issue-6-create-entity-relationship-diagram [18ms]
+2025-04-30 20:57:01.284 [info] > git merge-base refs/heads/issue-10-poc-git-based-recipe-versioning refs/remotes/origin/issue-10-poc-git-based-recipe-versioning [2ms]
+2025-04-30 20:57:01.290 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/issue-10-poc-git-based-recipe-versioning refs/remotes/issue-10-poc-git-based-recipe-versioning [15ms]
+2025-04-30 20:57:01.292 [info] > git diff --name-status -z --diff-filter=ADMR 96f627d033a107a040fe196537ece4b44381f4ed...refs/remotes/origin/issue-10-poc-git-based-recipe-versioning [2ms]
+2025-04-30 20:57:01.306 [info] > git status -z -uall [9ms]
+2025-04-30 20:57:01.307 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-04-30 20:57:01.674 [info] > git blame --root --incremental 96f627d033a107a040fe196537ece4b44381f4ed -- backend/server.js [15ms]
+2025-04-30 20:57:01.693 [info] > git check-ignore -v -z --stdin [2ms]

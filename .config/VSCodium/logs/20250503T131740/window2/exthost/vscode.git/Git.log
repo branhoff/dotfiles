@@ -1,0 +1,123 @@
+2025-05-03 21:12:02.910 [info] [main] Log level: Info
+2025-05-03 21:12:02.910 [info] [main] Validating found git in: "git"
+2025-05-03 21:12:02.910 [info] [main] Using git "2.39.5" from "git"
+2025-05-03 21:12:02.910 [info] [Model][doInitialScan] Initial repository scan started
+2025-05-03 21:12:02.910 [info] > git rev-parse --show-toplevel [10ms]
+2025-05-03 21:12:02.911 [info] > git rev-parse --git-dir --git-common-dir [4ms]
+2025-05-03 21:12:02.927 [info] [Model][openRepository] Opened repository: /home/hofbr/GitProjects/scripts
+2025-05-03 21:12:02.929 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-05-03 21:12:02.944 [info] > git config --get commit.template [3ms]
+2025-05-03 21:12:02.958 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-03 21:12:02.965 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:12:02.966 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-03 21:12:02.985 [info] > git status -z -uall [11ms]
+2025-05-03 21:12:02.986 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-03 21:12:03.032 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [15ms]
+2025-05-03 21:12:03.048 [info] > git config --get --local branch.main.vscode-merge-base [3ms]
+2025-05-03 21:12:03.048 [warning] [Git][config] git config failed: Failed to execute git
+2025-05-03 21:12:03.060 [info] > git config --get commit.template [29ms]
+2025-05-03 21:12:03.111 [info] > git reflog main --grep-reflog=branch: Created from *. [51ms]
+2025-05-03 21:12:03.124 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [4ms]
+2025-05-03 21:12:03.135 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [24ms]
+2025-05-03 21:12:03.146 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:12:03.149 [info] > git rev-parse refs/remotes/origin/main [3ms]
+2025-05-03 21:12:03.169 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [34ms]
+2025-05-03 21:12:03.181 [info] > git status -z -uall [23ms]
+2025-05-03 21:12:03.181 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [12ms]
+2025-05-03 21:12:03.201 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-05-03 21:12:03.213 [info] > git config --add --local branch.main.vscode-merge-base origin/main [33ms]
+2025-05-03 21:12:03.227 [info] > git config --get --local branch.main.vscode-merge-base [14ms]
+2025-05-03 21:12:03.240 [info] > git config --get commit.template [15ms]
+2025-05-03 21:12:03.241 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [3ms]
+2025-05-03 21:12:03.266 [info] > git merge-base refs/heads/main refs/remotes/origin/main [12ms]
+2025-05-03 21:12:03.290 [info] > git diff --name-status -z --diff-filter=ADMR 5824c0d185bd1f546b74c355ef950a4a1f894d49...refs/remotes/origin/main [12ms]
+2025-05-03 21:12:03.291 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [26ms]
+2025-05-03 21:12:03.305 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:12:03.307 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-03 21:12:03.331 [info] > git status -z -uall [13ms]
+2025-05-03 21:12:03.333 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-03 21:12:03.456 [info] > git check-ignore -v -z --stdin [1ms]
+2025-05-03 21:12:27.386 [info] > git show --textconv :download_iosevka_font [10ms]
+2025-05-03 21:12:27.397 [info] > git ls-files --stage -- download_iosevka_font [12ms]
+2025-05-03 21:12:27.404 [info] > git hash-object -t tree /dev/null [8ms]
+2025-05-03 21:12:27.404 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/hofbr/GitProjects/scripts/download_iosevka_font.git?%7B%22path%22%3A%22%2Fhome%2Fhofbr%2FGitProjects%2Fscripts%2Fdownload_iosevka_font%22%2C%22ref%22%3A%22%22%7D
+2025-05-03 21:12:27.408 [info] > git hash-object -t tree /dev/null [5ms]
+2025-05-03 21:12:27.408 [warning] [GitFileSystemProvider][stat] File not found - git:/home/hofbr/GitProjects/scripts/download_iosevka_font.git?%7B%22path%22%3A%22%2Fhome%2Fhofbr%2FGitProjects%2Fscripts%2Fdownload_iosevka_font%22%2C%22ref%22%3A%22%22%7D
+2025-05-03 21:12:27.615 [info] > git check-ignore -v -z --stdin [2ms]
+2025-05-03 21:12:28.130 [info] > git config --get commit.template [11ms]
+2025-05-03 21:12:28.130 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-03 21:12:28.139 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:12:28.140 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-03 21:12:28.156 [info] > git status -z -uall [8ms]
+2025-05-03 21:12:28.157 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-03 21:12:33.105 [info] > git show --textconv :download_iosevka_font.sh [7ms]
+2025-05-03 21:12:33.105 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/hofbr/GitProjects/scripts/download_iosevka_font.sh.git?%7B%22path%22%3A%22%2Fhome%2Fhofbr%2FGitProjects%2Fscripts%2Fdownload_iosevka_font.sh%22%2C%22ref%22%3A%22%22%7D
+2025-05-03 21:12:33.105 [info] > git ls-files --stage -- download_iosevka_font.sh [1ms]
+2025-05-03 21:12:33.105 [warning] [GitFileSystemProvider][stat] File not found - git:/home/hofbr/GitProjects/scripts/download_iosevka_font.sh.git?%7B%22path%22%3A%22%2Fhome%2Fhofbr%2FGitProjects%2Fscripts%2Fdownload_iosevka_font.sh%22%2C%22ref%22%3A%22%22%7D
+2025-05-03 21:12:33.386 [info] > git check-ignore -v -z --stdin [2ms]
+2025-05-03 21:12:33.934 [info] > git config --get commit.template [3ms]
+2025-05-03 21:12:33.943 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-05-03 21:12:33.949 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:12:33.950 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-03 21:12:33.964 [info] > git status -z -uall [9ms]
+2025-05-03 21:12:33.965 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-03 21:12:34.535 [info] > git show --textconv :delete_branches.sh [12ms]
+2025-05-03 21:12:34.537 [info] > git ls-files --stage -- delete_branches.sh [2ms]
+2025-05-03 21:12:34.550 [info] > git cat-file -s 03a0eb7459cce6d8de2e62270f2edc3e0c26c371 [2ms]
+2025-05-03 21:12:35.128 [info] > git blame --root --incremental 5824c0d185bd1f546b74c355ef950a4a1f894d49 -- delete_branches.sh [2ms]
+2025-05-03 21:12:56.974 [info] > git config --get commit.template [13ms]
+2025-05-03 21:12:56.975 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-03 21:12:56.981 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:12:56.982 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-03 21:12:56.996 [info] > git status -z -uall [9ms]
+2025-05-03 21:12:56.996 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-03 21:24:18.938 [info] > git config --get commit.template [12ms]
+2025-05-03 21:24:18.939 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-03 21:24:18.946 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:24:18.948 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-03 21:24:18.967 [info] > git status -z -uall [11ms]
+2025-05-03 21:24:18.968 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-03 21:25:23.425 [info] > git config --get commit.template [9ms]
+2025-05-03 21:25:23.426 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-03 21:25:23.436 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:25:23.438 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-03 21:25:23.459 [info] > git status -z -uall [11ms]
+2025-05-03 21:25:23.460 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-03 21:46:40.438 [info] > git config --get commit.template [9ms]
+2025-05-03 21:46:40.440 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-03 21:46:40.447 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:46:40.449 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-03 21:46:40.468 [info] > git status -z -uall [9ms]
+2025-05-03 21:46:40.470 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-03 21:46:50.303 [info] > git config --get commit.template [10ms]
+2025-05-03 21:46:50.304 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-03 21:46:50.312 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:46:50.313 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-03 21:46:50.331 [info] > git status -z -uall [9ms]
+2025-05-03 21:46:50.333 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-03 21:47:01.948 [info] > git config --get commit.template [10ms]
+2025-05-03 21:47:01.949 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-03 21:47:01.957 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:47:01.958 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-03 21:47:01.977 [info] > git status -z -uall [11ms]
+2025-05-03 21:47:01.978 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-03 21:53:13.434 [info] > git config --get commit.template [9ms]
+2025-05-03 21:53:13.436 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-03 21:53:13.442 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:53:13.443 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-03 21:53:13.457 [info] > git status -z -uall [6ms]
+2025-05-03 21:53:13.458 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-03 21:53:18.470 [info] > git config --get commit.template [2ms]
+2025-05-03 21:53:18.480 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-03 21:53:18.486 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:53:18.491 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2025-05-03 21:53:18.503 [info] > git status -z -uall [7ms]
+2025-05-03 21:53:18.505 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-03 21:53:25.738 [info] > git config --get commit.template [10ms]
+2025-05-03 21:53:25.739 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-03 21:53:25.747 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/hofbr/GitProjects/scripts/.git/refs/remotes/origin/main'
+2025-05-03 21:53:25.748 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-03 21:53:25.765 [info] > git status -z -uall [9ms]
+2025-05-03 21:53:25.767 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-03 21:58:10.380 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-03 21:58:10.392 [info] > git rev-parse --path-format=relative --show-toplevel [2ms]

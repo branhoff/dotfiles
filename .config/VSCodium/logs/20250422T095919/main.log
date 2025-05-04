@@ -1,0 +1,4 @@
+2025-04-22 09:59:19.258 [info] update#setState disabled
+2025-04-22 09:59:19.260 [info] update#ctor - updates are disabled as there is no update URL
+2025-04-22 09:59:41.035 [error] CodeWindow: detected unresponsive
+2025-04-22 09:59:46.453 [error] CodeWindow: recovered from unresponsive

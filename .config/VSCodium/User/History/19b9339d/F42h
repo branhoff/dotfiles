@@ -1,0 +1,27 @@
+FROM node:23-bullseye-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install development tools and global npm packages
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    curl \
+    nano \
+    && rm -rf /var/lib/apt/lists/* \
+    && npm install -g npm@latest nodemon
+
+# Note: We'll use the node user that already exists in the image
+# instead of creating a new one to avoid UID/GID conflicts
+
+# Expose ports for development
+EXPOSE 5173 3001
+
+# Set ownership of app directory to node user
+RUN chown -R node:node /app
+
+# Switch to node user
+USER node
+
+# Keep container running
+CMD ["sh", "-c", "trap : TERM INT; sleep infinity & wait"]

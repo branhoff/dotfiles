@@ -1,0 +1,30 @@
+FROM node:23-bullseye-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install development tools and global npm packages
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    curl \
+    nano \
+    && rm -rf /var/lib/apt/lists/* \
+    && npm install -g npm@latest nodemon
+
+# Create a non-root user with the same UID as your host user
+# This is critical for file permissions to work correctly
+ARG USER_ID=1000
+ARG GROUP_ID=1000
+
+RUN groupadd -g ${GROUP_ID} nodeuser && \
+    useradd -u ${USER_ID} -g nodeuser -s /bin/bash -m nodeuser && \
+    chown -R nodeuser:nodeuser /app
+
+# Expose ports for development
+EXPOSE 5173 3001
+
+# Switch to non-root user
+USER nodeuser
+
+# Keep container running
+CMD ["sh", "-c", "trap : TERM INT; sleep infinity & wait"]

@@ -1,0 +1,52 @@
+2025-04-28 22:25:27.341 [info] [main] Log level: Info
+2025-04-28 22:25:27.341 [info] [main] Validating found git in: "git"
+2025-04-28 22:25:27.341 [info] [main] Using git "2.39.5" from "git"
+2025-04-28 22:25:27.341 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-28 22:25:27.341 [info] > git rev-parse --show-toplevel [7ms]
+2025-04-28 22:25:27.341 [info] > git rev-parse --git-dir --git-common-dir [10ms]
+2025-04-28 22:25:27.341 [info] [Model][openRepository] Opened repository: /home/hofbr/GitProjects/gitgrub
+2025-04-28 22:25:27.342 [info] > git config --get commit.template [9ms]
+2025-04-28 22:25:27.342 [info] > git rev-parse --show-toplevel [2ms]
+2025-04-28 22:25:27.364 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/issue-10-poc-git-based-recipe-versioning refs/remotes/issue-10-poc-git-based-recipe-versioning [11ms]
+2025-04-28 22:25:27.364 [info] > git rev-parse --show-toplevel [1ms]
+2025-04-28 22:25:27.395 [info] > git status -z -uall [14ms]
+2025-04-28 22:25:27.395 [info] > git rev-parse --show-toplevel [25ms]
+2025-04-28 22:25:27.403 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [10ms]
+2025-04-28 22:25:27.440 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/issue-10-poc-git-based-recipe-versioning refs/remotes/issue-10-poc-git-based-recipe-versioning [14ms]
+2025-04-28 22:25:27.449 [info] > git rev-parse --show-toplevel [46ms]
+2025-04-28 22:25:27.450 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-28 22:25:27.451 [info] > git config --get --local branch.issue-10-poc-git-based-recipe-versioning.vscode-merge-base [2ms]
+2025-04-28 22:25:27.460 [info] > git config --get commit.template [21ms]
+2025-04-28 22:25:27.469 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/issue-6-create-entity-relationship-diagram refs/remotes/origin/issue-6-create-entity-relationship-diagram [10ms]
+2025-04-28 22:25:27.480 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/issue-10-poc-git-based-recipe-versioning refs/remotes/issue-10-poc-git-based-recipe-versioning [12ms]
+2025-04-28 22:25:27.481 [info] > git merge-base refs/heads/issue-10-poc-git-based-recipe-versioning refs/remotes/origin/issue-10-poc-git-based-recipe-versioning [3ms]
+2025-04-28 22:25:27.502 [info] > git status -z -uall [7ms]
+2025-04-28 22:25:27.502 [info] > git diff --name-status -z --diff-filter=ADMR 5529e6577647526c5996a80660cb9088c7bcf818...refs/remotes/origin/issue-10-poc-git-based-recipe-versioning [14ms]
+2025-04-28 22:25:27.503 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-04-28 22:25:28.114 [info] > git show --textconv :frontend/eslint.config.js [12ms]
+2025-04-28 22:25:28.126 [info] > git check-ignore -v -z --stdin [2ms]
+2025-04-28 22:25:28.127 [info] > git ls-files --stage -- frontend/eslint.config.js [14ms]
+2025-04-28 22:25:28.140 [info] > git cat-file -s ec2b712d301e7ddeca8327fc4b967069cc82047b [2ms]
+2025-04-28 22:25:42.865 [info] > git check-ignore -v -z --stdin [79ms]
+2025-04-28 22:25:42.865 [info] > git show --textconv :backend/git-repos/demo/7f739e47-a917-4bec-ab39-bd3853ba85ee/recipe.md [14ms]
+2025-04-28 22:25:42.878 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [63ms]
+2025-04-28 22:25:42.881 [info] > git hash-object -t tree /dev/null [3ms]
+2025-04-28 22:25:42.881 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/hofbr/GitProjects/gitgrub/backend/git-repos/demo/7f739e47-a917-4bec-ab39-bd3853ba85ee/recipe.md.git?%7B%22path%22%3A%22%2Fhome%2Fhofbr%2FGitProjects%2Fgitgrub%2Fbackend%2Fgit-repos%2Fdemo%2F7f739e47-a917-4bec-ab39-bd3853ba85ee%2Frecipe.md%22%2C%22ref%22%3A%22%22%7D
+2025-04-28 22:25:42.882 [info] > git ls-files --stage -- backend/git-repos/demo/7f739e47-a917-4bec-ab39-bd3853ba85ee/recipe.md [18ms]
+2025-04-28 22:25:42.882 [warning] [GitFileSystemProvider][stat] File not found - git:/home/hofbr/GitProjects/gitgrub/backend/git-repos/demo/7f739e47-a917-4bec-ab39-bd3853ba85ee/recipe.md.git?%7B%22path%22%3A%22%2Fhome%2Fhofbr%2FGitProjects%2Fgitgrub%2Fbackend%2Fgit-repos%2Fdemo%2F7f739e47-a917-4bec-ab39-bd3853ba85ee%2Frecipe.md%22%2C%22ref%22%3A%22%22%7D
+2025-04-28 22:25:42.906 [info] > git blame --root --incremental 5529e6577647526c5996a80660cb9088c7bcf818 -- backend/git-repos/demo/7f739e47-a917-4bec-ab39-bd3853ba85ee/recipe.md [4ms]
+2025-04-28 22:25:42.906 [info] fatal: no such path backend/git-repos/demo/7f739e47-a917-4bec-ab39-bd3853ba85ee/recipe.md in 5529e6577647526c5996a80660cb9088c7bcf818
+2025-04-28 22:25:48.715 [info] > git show --textconv HEAD:backend/package.json [20ms]
+2025-04-28 22:25:48.718 [info] > git ls-tree -l HEAD -- backend/package.json [4ms]
+2025-04-28 22:25:48.879 [info] > git blame --root --incremental 5529e6577647526c5996a80660cb9088c7bcf818 -- backend/package.json [4ms]
+2025-04-28 22:25:49.376 [info] > git show --textconv HEAD:backend/package-lock.json [17ms]
+2025-04-28 22:25:49.377 [info] > git ls-tree -l HEAD -- backend/package-lock.json [2ms]
+2025-04-28 22:25:50.458 [info] > git show --textconv HEAD:backend/server.js [17ms]
+2025-04-28 22:25:50.460 [info] > git ls-tree -l HEAD -- backend/server.js [2ms]
+2025-04-28 22:25:52.566 [info] > git ls-tree -l HEAD -- backend/server.js [1ms]
+2025-04-28 22:25:52.703 [info] > git blame --root --incremental 5529e6577647526c5996a80660cb9088c7bcf818 -- backend/server.js [4ms]
+2025-04-28 22:26:22.941 [info] > git ls-tree -l HEAD -- backend/server.js [2ms]
+2025-04-28 22:27:01.547 [info] > git ls-tree -l HEAD -- backend/server.js [2ms]
+2025-04-28 22:27:02.737 [info] > git ls-tree -l HEAD -- backend/server.js [2ms]
+2025-04-28 22:44:08.462 [info] > git ls-tree -l HEAD -- backend/server.js [1ms]
+2025-04-28 22:44:11.820 [info] > git ls-tree -l HEAD -- backend/server.js [4ms]

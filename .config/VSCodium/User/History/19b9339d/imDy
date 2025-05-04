@@ -1,0 +1,17 @@
+FROM node:23-bullseye
+
+WORKDIR /app
+
+VOLUME /app/node_modules
+
+RUN npm install -g npm@latest
+
+# Port 5173 for Vite dev server
+# Port 3001 for backend API server
+EXPOSE 5173 3001
+
+RUN groupadd -r nodeuser && useradd -r -g nodeuser -m nodeuser
+RUN chown -R nodeuser:nodeuser /app
+USER nodeuser
+
+CMD ["sh"]

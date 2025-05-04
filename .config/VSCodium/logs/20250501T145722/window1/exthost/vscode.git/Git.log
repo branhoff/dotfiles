@@ -1,0 +1,34 @@
+2025-05-01 14:57:47.827 [info] [main] Log level: Info
+2025-05-01 14:57:47.827 [info] [main] Validating found git in: "git"
+2025-05-01 14:57:47.827 [info] [main] Using git "2.39.5" from "git"
+2025-05-01 14:57:47.827 [info] [Model][doInitialScan] Initial repository scan started
+2025-05-01 14:57:47.827 [info] > git rev-parse --show-toplevel [12ms]
+2025-05-01 14:57:47.827 [info] > git rev-parse --git-dir --git-common-dir [14ms]
+2025-05-01 14:57:47.827 [info] [Model][openRepository] Opened repository: /home/hofbr/GitProjects/gitgrub
+2025-05-01 14:57:47.933 [info] > git rev-parse --show-toplevel [76ms]
+2025-05-01 14:57:47.934 [info] > git config --get commit.template [92ms]
+2025-05-01 14:57:47.998 [info] > git rev-parse --show-toplevel [47ms]
+2025-05-01 14:57:48.040 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/issue-10-poc-git-based-recipe-versioning refs/remotes/issue-10-poc-git-based-recipe-versioning [44ms]
+2025-05-01 14:57:48.045 [info] > git rev-parse --show-toplevel [7ms]
+2025-05-01 14:57:48.066 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-01 14:57:48.115 [info] > git status -z -uall [33ms]
+2025-05-01 14:57:48.115 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [18ms]
+2025-05-01 14:57:48.164 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/issue-10-poc-git-based-recipe-versioning refs/remotes/issue-10-poc-git-based-recipe-versioning [17ms]
+2025-05-01 14:57:48.179 [info] > git rev-parse --show-toplevel [66ms]
+2025-05-01 14:57:48.180 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-05-01 14:57:48.195 [info] > git config --get --local branch.issue-10-poc-git-based-recipe-versioning.vscode-merge-base [16ms]
+2025-05-01 14:57:48.210 [info] > git config --get commit.template [46ms]
+2025-05-01 14:57:48.215 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/issue-6-create-entity-relationship-diagram refs/remotes/origin/issue-6-create-entity-relationship-diagram [6ms]
+2025-05-01 14:57:48.247 [info] > git merge-base refs/heads/issue-10-poc-git-based-recipe-versioning refs/remotes/origin/issue-10-poc-git-based-recipe-versioning [17ms]
+2025-05-01 14:57:48.340 [info] > git show --textconv :docs/user_requirements.md [64ms]
+2025-05-01 14:57:48.340 [info] > git show --textconv :backend/server.js [39ms]
+2025-05-01 14:57:48.340 [info] > git ls-files --stage -- backend/server.js [25ms]
+2025-05-01 14:57:48.354 [info] > git ls-files --stage -- docs/user_requirements.md [63ms]
+2025-05-01 14:57:48.366 [info] > git diff --name-status -z --diff-filter=ADMR 96f627d033a107a040fe196537ece4b44381f4ed...refs/remotes/origin/issue-10-poc-git-based-recipe-versioning [105ms]
+2025-05-01 14:57:48.366 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/issue-10-poc-git-based-recipe-versioning refs/remotes/issue-10-poc-git-based-recipe-versioning [121ms]
+2025-05-01 14:57:48.375 [info] > git cat-file -s 021a87c1705a4e43ec216b43d6e1beac7be2336b [10ms]
+2025-05-01 14:57:48.375 [info] > git cat-file -s 1ab5f7dd0a8513dc7cc39365fb2fc657ad5ef98a [24ms]
+2025-05-01 14:57:48.412 [info] > git status -z -uall [18ms]
+2025-05-01 14:57:48.414 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-01 14:57:48.439 [info] > git blame --root --incremental 96f627d033a107a040fe196537ece4b44381f4ed -- backend/server.js [10ms]
+2025-05-01 14:57:48.474 [info] > git check-ignore -v -z --stdin [2ms]

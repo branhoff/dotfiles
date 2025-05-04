@@ -1,0 +1,50 @@
+2025-04-30 20:56:41.980 [info] update#setState disabled
+2025-04-30 20:56:41.984 [info] update#ctor - updates are disabled as there is no update URL
+2025-04-30 20:56:57.047 [error] CodeWindow: detected unresponsive
+2025-04-30 20:56:59.912 [error] CodeWindow: recovered from unresponsive
+2025-04-30 20:57:07.225 [error] [uncaught exception in main]: UnresponsiveSampleError: UnresponsiveSampleError: from window with ID 1 belonging to process with pid 15241
+2025-04-30 20:57:07.225 [error] 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:30:79560
+2025-04-30 20:57:07.225 [error] [uncaught exception in main]: UnresponsiveSampleError: UnresponsiveSampleError: from window with ID 1 belonging to process with pid 15241
+2025-04-30 20:57:07.226 [error] 
+    at String.charAt (<anonymous>)
+    at Jie._createCloseBracketRegExp (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:52:9176)
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:52:8243
+    at Array.forEach (<anonymous>)
+    at new Jie (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:52:8182)
+    at new Pwi (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:53:6555)
+    at JAi.getResolvedConfiguration (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:53:4322)
+    at ZAi.getLanguageConfiguration (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:53:6270)
+    at QAi (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:53:3162)
+    at kLe.getLanguageConfiguration (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:53:2980)
+2025-04-30 20:57:07.226 [error] [uncaught exception in main]: UnresponsiveSampleError: UnresponsiveSampleError: from window with ID 1 belonging to process with pid 15241
+2025-04-30 20:57:07.226 [error] 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:32:16999
+2025-04-30 20:57:07.226 [error] [uncaught exception in main]: UnresponsiveSampleError: UnresponsiveSampleError: from window with ID 1 belonging to process with pid 15241
+2025-04-30 20:57:07.226 [error] 
+    at ni.onTimeout (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:30:80194)
+2025-04-30 20:57:07.226 [error] [uncaught exception in main]: UnresponsiveSampleError: UnresponsiveSampleError: from window with ID 1 belonging to process with pid 15241
+2025-04-30 20:57:07.226 [error] 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:66:129187
+2025-04-30 20:57:07.226 [error] CodeWindow unresponsive samples:
+<2> 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:30:79560
+<1> 
+    at String.charAt (<anonymous>)
+    at Jie._createCloseBracketRegExp (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:52:9176)
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:52:8243
+    at Array.forEach (<anonymous>)
+    at new Jie (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:52:8182)
+    at new Pwi (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:53:6555)
+    at JAi.getResolvedConfiguration (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:53:4322)
+    at ZAi.getLanguageConfiguration (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:53:6270)
+    at QAi (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:53:3162)
+    at kLe.getLanguageConfiguration (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:53:2980)
+<1> 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:32:16999
+<1> 
+    at ni.onTimeout (vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:30:80194)
+<1> 
+    at vscode-file://vscode-app/usr/share/codium/resources/app/out/vs/workbench/workbench.desktop.main.js:66:129187
+Total Samples: 6
+For full overview of the unresponsive period, capture cpu profile via https://aka.ms/vscode-tracing-cpu-profile
